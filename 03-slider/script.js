@@ -27,3 +27,7 @@ const changeSlide = (direction) => {
 
 upBtn.addEventListener("click", () => changeSlide("up"))
 downBtn.addEventListener("click", () => changeSlide("down"))
+document.addEventListener("keyup", (e) =>{
+	if (e.key === "ArrowUp") changeSlide("up")
+	if (e.key === "ArrowDown") changeSlide("down")
+})
